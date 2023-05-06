@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    /* He elegido color negro para el fondo porque creo que es un buen contraste y no cansa la vista a la hora de jugar.*/
+}
+
+#tablero {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    height: 300px;
+    border: 10px solid rgb(255, 255, 255);
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* Aquí he elegido como será el tablero. Lo he centrado y los bordes los he pintado de blanco para que haga el contraste con el fondo negro.*/
+}
+
+.casilla {
+    box-sizing: border-box;
+    width: 100px;
+    height: 100px;
+    border: 5px solid rgb(0, 0, 0);
+    background-color: #f7f7f7;
+    cursor: pointer;
+    /* Aquí he elegido como será cada casilla dentro del tablero. Lo he centrado y los bordes los he pintado de blanco para que haga el contraste con el fondo negro.*/
+}
+
+.casilla:hover {
+    background-color: #d6d6d6;
+    /* Un ligero cambio a fondo gris cuando se hace hover con el mouse en las casillas para hacer contraste.*/
+}
+
+.casilla.equis {
+    color: blue;
+    font-size: 80px !important;
+    text-align: center;
+    /* Color azul para la letra "equis". He asignado el atributo !important para que siempre sea de ese tamaño, sin prorizar otros*/
+}
+
+.casilla.letrao {
+    color: red;
+    font-size: 80px !important;
+    text-align: center;
+    /* Color rojo para la letra "o".Le he puesto el nombre "letrao" para que en el JavaScript no sea 'o' y lleve a problemas a la hora de leerlo. 
+    He asignado el atributo !important para que siempre sea de ese tamaño, sin prorizar otros*/
+}
