@@ -9,18 +9,25 @@
     <link rel="stylesheet" href="index.css">
 </head>
 
-
 <body>
-    <!-- MENÚ EN TODAS LAS PÁGINAS-->
+    <!-- MENÚ EN TODAS LAS PÁGINAS -->
     <ul>
         <li id="logo"><a href="index.html">PEQUEÑITOS MINIJUEGOS</a></li>
-        <li><a href="./caracruz_alvaroarizaortiz.html"> Cara o cruz </a> </li>
-        <li><a href="./adivinacolor_alvaroarizaortiz.html"> Adivina el color</a> </li>
-        <li><a href="./adivinapalabra_alvaroarizaortiz.html"> Adivina la palabra</a> </li>
+        <li><a href="./caracruz_alvaroarizaortiz.html"> Cara o cruz </a></li>
+        <li><a href="./adivinacolor_alvaroarizaortiz.html"> Adivina el color</a></li>
+        <li><a href="./adivinapalabra_alvaroarizaortiz.html"> Adivina la palabra</a></li>
         <li><a href="./tateti_alvaroarizaortiz.html"> Tres en raya</a></li>
-        <li><a href="./lahipnoticabolaquebota_alvaroarizaortiz.html"> La hipnótica bola que bota</a> </li>
+        <li><a href="./lahipnoticabolaquebota_alvaroarizaortiz.html"> La hipnótica bola que bota</a></li>
+        <li><a href="./ajustes.html"> Ajustes</a></li>
         <li><a href="#" id="informacion">Más información</a></li>
     </ul>
+
+    <button id="toggle-button">Cambiar modo día/noche</button>
+    <div id="user-display"></div>
+    <script src="ajustes.js"></script>
+    <script src="modonoche.js"></script>
+    
+
     <script>
         const enlaceMasInfo = document.getElementById("informacion");
         enlaceMasInfo.addEventListener("click", function () {
@@ -37,6 +44,7 @@
             alert(mensaje);
         });
     </script>
+
 </body>
 
 </html>

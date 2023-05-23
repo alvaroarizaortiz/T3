@@ -1,26 +1,20 @@
-.menu {
-    background-color: #333;
-    padding: 10px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-}
-
-.menu ul {
+ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    overflow: hidden;
+    background-color: #333;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    width: 100%;
 }
 
-.menu li {
+li {
     margin-left: 10px;
     position: relative;
 }
 
-.menu li::before {
+li::before {
     content: "";
     position: absolute;
     top: 50%;
@@ -31,7 +25,7 @@
     background-color: #fff;
 }
 
-.menu li::after {
+li::after {
     content: "";
     position: absolute;
     top: 50%;
@@ -42,11 +36,11 @@
     background-color: #fff;
 }
 
-.menu li:last-child::after {
+li:last-child::after {
     display: none;
 }
 
-.menu li a {
+li a {
     display: block;
     color: white;
     text-align: center;
@@ -54,54 +48,55 @@
     text-decoration: none;
 }
 
-.menu li a:hover {
+li a:hover {
     background-color: #111;
 }
 
-.menu #logo {
+#logo {
     margin-left: 0;
     margin-right: auto;
 }
 
 body {
-    background-color: black;
+    background-color: rgb(255, 255, 255);
+    color: #000;
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
     height: 100vh;
 }
 
+body.dark-mode {
+    background-color: #000;
+    color: #ffffff;
+  }
 .texto {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     text-align: center;
     font-size: 20px;
     font-weight: bold;
     color: black;
+    margin-top: 20px;
 }
 
 .contenedor {
-    position: relative;
-}
-
-.caja {
-    width: 200px;
+    width: 150px;
     height: 400px;
-    background-color: white;
+    background-color: #808080;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
-    overflow: hidden;
+    margin-top: 200px; 
+    overflow: hidden; 
+    position: relative; 
 }
 
 .bola {
-    position: absolute;
-    bottom: 0;
-    left: calc(50% - 50px);
+    position: absolute; 
+    bottom: 0; 
+    left: calc(50% - 50px); 
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -123,3 +118,19 @@ body {
         transform: translateY(0);
     }
 }
+
+#toggle-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: url('cursor.cur');
+  }
+  
+  #toggle-button:hover {
+    background-color: #111;
+  }
+  

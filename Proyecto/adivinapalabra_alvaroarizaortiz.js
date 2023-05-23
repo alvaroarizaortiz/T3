@@ -1,5 +1,5 @@
 // Palabra a adivinar
-const words = ["Carlos", "Boni", "apruebame", "gato", "Gaspar", "palabra", "javascript", "argentina", "mate", "asado"];
+const words = ["Carlos", "Boni", "apruebame", "gato", "Gaspar", "palabra", "script", "argentina", "mate", "asado"];
 
 // Palabra aleatoria seleccionada para el juego
 let word = "";
@@ -51,9 +51,27 @@ submitButton.addEventListener("click", function() {
 
   // Validar si se ingresó una letra válida
   if (letter && letter.length === 1 && letter.match(/[a-z]/i)) {
-    guessedLetters.push(letter);
-    updateWordDisplay();
-    inputLetter.value = ""; // Limpiar el campo de entrada
+    // Verificar si la letra ya ha sido adivinada antes
+    if (guessedLetters.includes(letter)) {
+      result.textContent = "Ya has ingresado esa letra. Por favor usa otra";
+      result.style.color = "red";
+      return;
+    }
+
+    // Verificar si la letra está presente en la palabra
+    if (word.includes(letter)) {
+      guessedLetters.push(letter);
+      updateWordDisplay();
+
+      // Verificar si se adivinó la palabra completa
+      if (guessedLetters.length === new Set(word).size) {
+        result.textContent = "¡Felicidades! Adivinaste la palabra.";
+        result.style.color = "green";
+        inputLetter.disabled = true;
+        submitButton.disabled = true;
+        return;
+      }
+    }
 
     attempts++;
 
@@ -64,16 +82,11 @@ submitButton.addEventListener("click", function() {
       inputLetter.disabled = true;
       submitButton.disabled = true;
     } else {
-      // Verificar si se adivinó la palabra completa
-      if (guessedLetters.length === new Set(word).size) {
-        result.textContent = "¡Felicidades! Adivinaste la palabra.";
-        result.style.color = "green";
-        inputLetter.disabled = true;
-        submitButton.disabled = true;
-      } else {
-        result.textContent = "Intentos restantes: " + (maxAttempts - attempts);
-      }
+      result.textContent = "Intentos restantes: " + (maxAttempts - attempts);
+      result.style.color = "white";
     }
+
+    inputLetter.value = ""; // Limpiar el campo de entrada
   }
 });
 

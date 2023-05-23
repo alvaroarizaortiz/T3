@@ -20,5 +20,7 @@ btnLanzar.addEventListener("click", function () {
         resultado.textContent = "Cruz";
       }
     }, 1000); // Ajusta el tiempo según la duración de la animación CSS
+
+    
   });
   

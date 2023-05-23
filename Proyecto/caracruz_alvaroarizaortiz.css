@@ -1,11 +1,17 @@
 body {
-  background-color: #000000;
+  background-color: #ffffff;
+  color: #000;
   margin: 0;
   padding-top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+}
+
+body.dark-mode {
+  background-color: #000;
+  color: #ffffff;
 }
 
 .menu {
@@ -75,7 +81,7 @@ li a:hover {
 }
 
 .caja {
-  background-color: #fff;
+  background-color: #808080;
   padding: 20px;
   border-radius: 10px;
   display: flex;
@@ -129,5 +135,20 @@ h2 {
 
 html {
   cursor: url('cursor.cur'), auto;
+}
+
+#toggle-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: url('cursor.cur');
+}
+
+#toggle-button:hover {
+  background-color: #111;
 }
 

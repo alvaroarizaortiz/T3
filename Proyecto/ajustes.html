@@ -1,3 +1,4 @@
+<!-- Página de ajustes -->
 <!DOCTYPE html>
 <html lang="es">
 
@@ -5,16 +6,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Álvaro Ariza Ortiz">
-    <meta name="description"
-        content="La hipnótica bola que bota para la clase de Lenguaje de Marcas en 1ºDAM - Curso 2022/23">
-    <title>Bola que Bota</title>
-    <link rel="stylesheet" href="lahipnoticabolaquebota_alvaroarizaortiz.css">
-    <link rel="stylesheet" href="menu.css">
+    <title>Ajustes</title>
+    <link rel="stylesheet" href="ajustes.css">
 </head>
 
 <body>
-
+    <!-- MENÚ EN TODAS LAS PÁGINAS -->
     <ul>
         <li id="logo"><a href="index.html">PEQUEÑITOS MINIJUEGOS</a></li>
         <li><a href="./caracruz_alvaroarizaortiz.html"> Cara o cruz </a></li>
@@ -26,13 +23,23 @@
         <li><a href="#" id="informacion">Más información</a></li>
     </ul>
 
+    <button id="toggle-button">Cambiar modo día/noche</button>
 
-    <div class="contenedor">
-        <div class="caja">
-            <div class="bola"></div>
-            <div class="texto">LA HIPNÓTICA BOLA QUE BOTA</div>
-        </div>
-    </div>
+    <script src="modonoche.js"></script>
+
+    <h1>Ajustes</h1>
+
+
+    <!-- Elemento HTML para mostrar el nombre de usuario -->
+    <div id="user-display"></div>
+
+    <!-- Formulario para ingresar el nombre de usuario -->
+    <form onsubmit="saveUserName(); return false;">
+        <input type="text" id="user-name-input" placeholder="Ingresa tu nombre">
+        <button type="submit">Guardar</button>
+    </form>
+
+    <script src="ajustes.js"></script>
 
     <script>
         const enlaceMasInfo = document.getElementById("informacion");
@@ -50,9 +57,6 @@
             alert(mensaje);
         });
     </script>
-
-    <button id="toggle-button">Cambiar modo día/noche</button>
-    <script src="modonoche.js"></script>
 </body>
 
 </html>
