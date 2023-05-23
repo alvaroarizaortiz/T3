@@ -6,22 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>INDEX</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 
+
 <body>
-    <h1>Mi proyecto final</h1>
-    <p>Repositorio habilitado para el tercer trimestre de Lenguaje de Marcas</p>
-    <p>Álvaro Ariza Ortiz - 1ºDAM - Curso 2022/23</p>
-    <hr>
-    <a target=_blank href="./tateti_alvaroarizaortiz.html">TA-TE-TI (3 en raya) </a>
-    <hr>
-    <a href="#" id="informacion">Más información</a>
+    <!-- MENÚ EN TODAS LAS PÁGINAS-->
+    <ul>
+        <li id="logo"><a href="index.html">PEQUEÑITOS MINIJUEGOS</a></li>
+        <li><a href="./caracruz_alvaroarizaortiz.html"> Cara o cruz </a> </li>
+        <li><a href="./adivinacolor_alvaroarizaortiz.html"> Adivina el color</a> </li>
+        <li><a href="./adivinapalabra_alvaroarizaortiz.html"> Adivina la palabra</a> </li>
+        <li><a href="./tateti_alvaroarizaortiz.html"> Tres en raya</a></li>
+        <li><a href="./lahipnoticabolaquebota_alvaroarizaortiz.html"> La hipnótica bola que bota</a> </li>
+        <li><a href="#" id="informacion">Más información</a></li>
+    </ul>
     <script>
         const enlaceMasInfo = document.getElementById("informacion");
         enlaceMasInfo.addEventListener("click", function () {
             const nombre = "Álvaro Ariza Ortiz";
             const curso = "1ºDAM";
-            const asignatura = "Lenguaje de Marcas" + "\n" +  "Proyecto TA-TE-TI (3 en raya)";
+            const asignatura = "Lenguaje de Marcas" + "\n" + "Proyecto TA-TE-TI (3 en raya)";
 
             // Creamos el mensaje con la información
             const mensaje = "Nombre del alumno: " + nombre + "\n" +
@@ -32,8 +37,6 @@
             alert(mensaje);
         });
     </script>
-
-    <hr>
 </body>
 
 </html>

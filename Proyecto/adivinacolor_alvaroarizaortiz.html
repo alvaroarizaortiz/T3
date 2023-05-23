@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Álvaro Ariza Ortiz">
+  <meta name="description" content="Adivina el color para la clase de Lenguaje de Marcas en 1ºDAM - Curso 2022/23">
+  <title>Adivina el color</title>
+  <link rel="stylesheet" href="adivinacolor_alvaroarizaortiz.css">
+</head>
+
+<body>
+  <!--MENU EN TODAS LAS PÁGINAS-->
+  <ul>
+    <li id="logo"><a href="index.html">PEQUEÑITOS MINIJUEGOS</a></li>
+    <li><a href="./caracruz_alvaroarizaortiz.html"> Cara o cruz </a> </li>
+    <li><a href="./adivinacolor_alvaroarizaortiz.html"> Adivina el color</a> </li>
+    <li><a href="./adivinapalabra_alvaroarizaortiz.html"> Adivina la palabra</a> </li>
+    <li><a href="./tateti_alvaroarizaortiz.html"> Tres en raya</a></li>
+    <li><a href="./lahipnoticabolaquebota_alvaroarizaortiz.html"> La hipnótica bola que bota</a> </li>
+    <li><a href="#" id="informacion">Más información</a></li>
+</ul>
+  <!-- JUEGO DE ADIVINA EL COLOR-->
+  <div class="caja">
+    <h1>Adivina el color</h1>
+    <p>Selecciona el color correcto.</p>
+    <div class="opciones">
+      <div class="opcion" data-color="red" style="background-color: red;"></div>
+      <div class="opcion" data-color="blue" style="background-color: blue;"></div>
+      <div class="opcion" data-color="green" style="background-color: green;"></div>
+      <div class="opcion" data-color="yellow" style="background-color: yellow;"></div>
+      <div class="opcion" data-color="orange" style="background-color: orange;"></div>
+      <div class="opcion" data-color="purple" style="background-color: purple;"></div>
+    </div>
+    <p id="resultado"></p>
+    <p>Colores ya pulsados:</p>
+    <ul id="historial"></ul>
+    <button id="btn-volver-jugar">Volver a jugar</button>
+  </div>
+  <script src="adivinacolor_alvaroarizaortiz.js"></script>
+
+  <script>
+    const enlaceMasInfo = document.getElementById("informacion");
+    enlaceMasInfo.addEventListener("click", function () {
+      const nombre = "Álvaro Ariza Ortiz";
+      const curso = "1ºDAM";
+      const asignatura = "Lenguaje de Marcas" + "\n" + "Proyecto TA-TE-TI (3 en raya)";
+
+      // Creamos el mensaje con la información
+      const mensaje = "Nombre del alumno: " + nombre + "\n" +
+        "Curso: " + curso + "\n" +
+        "Tema elegido de Proyecto Final: " + asignatura;
+
+      // Mostramos el mensaje con el método alert()
+      alert(mensaje);
+    });
+  </script>
+</body>
+
+</html>

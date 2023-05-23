@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Álvaro Ariza Ortiz">
+    <meta name="description"
+        content="La hipnótica bola que bota para la clase de Lenguaje de Marcas en 1ºDAM - Curso 2022/23">
+    <title>Bola que Bota</title>
+    <link rel="stylesheet" href="lahipnoticabolaquebota_alvaroarizaortiz.css">
+    <link rel="stylesheet" href="menu.css">
+</head>
+
+<body>
+    <div class="menu">
+        <ul>
+            <li id="logo"><a href="index.html">PEQUEÑITOS MINIJUEGOS</a></li>
+            <li><a href="./caracruz_alvaroarizaortiz.html"> Cara o cruz </a> </li>
+            <li><a href="./adivinacolor_alvaroarizaortiz.html"> Adivina el color</a> </li>
+            <li><a href="./adivinapalabra_alvaroarizaortiz.html"> Adivina la palabra</a> </li>
+            <li><a href="./tateti_alvaroarizaortiz.html"> Tres en raya</a></li>
+            <li><a href="./lahipnoticabolaquebota_alvaroarizaortiz.html"> La hipnótica bola que bota</a> </li>
+            <li><a href="#" id="informacion">Más información</a></li>
+        </ul>
+    </div>
+
+    <div class="contenedor">
+        <div class="caja">
+            <div class="bola"></div>
+            <div class="texto">LA HIPNÓTICA BOLA QUE BOTA</div>
+        </div>
+    </div>
+
+    <script>
+        const enlaceMasInfo = document.getElementById("informacion");
+        enlaceMasInfo.addEventListener("click", function () {
+            const nombre = "Álvaro Ariza Ortiz";
+            const curso = "1ºDAM";
+            const asignatura = "Lenguaje de Marcas" + "\n" + "Proyecto TA-TE-TI (3 en raya)";
+
+            // Creamos el mensaje con la información
+            const mensaje = "Nombre del alumno: " + nombre + "\n" +
+                "Curso: " + curso + "\n" +
+                "Tema elegido de Proyecto Final: " + asignatura;
+
+            // Mostramos el mensaje con el método alert()
+            alert(mensaje);
+        });
+    </script>
+
+</body>
+</html>

@@ -1,7 +1,45 @@
 body {
-    margin: 0;
-    padding: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
     background-color: #000000;
+}
+
+h1 {
+    margin-top: 40px;
+    color: #fff;
+}
+
+p {
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+#word-container {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+#input-letter {
+    width: 40px;
+    padding: 5px;
+    margin-right: 10px;
+    color: #000; /* Cambio de color a negro */
+}
+
+#submit-button {
+    padding: 8px 16px;
+    font-size: 16px;
+}
+
+#result {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.menu {
+    background-color: #333;
 }
 
 ul {
@@ -9,9 +47,9 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
     display: flex;
     justify-content: space-between;
+    color: white;
 }
 
 li {
@@ -61,48 +99,3 @@ li a:hover {
     margin-left: 0;
     margin-right: auto;
 }
-
-#tablero {
-    display: flex;
-    flex-wrap: wrap;
-    width: 300px;
-    height: 300px;
-    border: 10px solid rgb(255, 255, 255);
-    margin: auto;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-
-.casilla {
-    box-sizing: border-box;
-    width: 100px;
-    height: 100px;
-    border: 5px solid rgb(0, 0, 0);
-    background-color: #f7f7f7;
-    cursor: pointer;
-}
-
-.casilla:hover {
-    background-color: #d6d6d6;
-}
-
-.casilla.equis {
-    color: blue;
-    font-size: 80px !important;
-    text-align: center;
-}
-
-.casilla.letrao {
-    color: red;
-    font-size: 80px !important;
-    text-align: center;
-}
-
-
-html {
-    cursor: url('cursor.cur'), auto;
-  }
-

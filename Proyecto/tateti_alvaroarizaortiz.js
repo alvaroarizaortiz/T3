@@ -91,9 +91,6 @@ const comprobarGanador = () => {
 	return false;
 };
 
-//  Coloco aquí el saludo inicial, he visto que era necesario a lo largo de la realización del ejercicio.
-alert('Álvaro Ariza Ortiz - 1ºDAM. Trabajo para Lenguaje de Marcas: TA-TE-TI (tres en raya).') 
-
 casillas.forEach((casilla) => {
 	casilla.addEventListener('click', jugada);
 });
