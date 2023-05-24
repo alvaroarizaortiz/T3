@@ -1,5 +1,10 @@
+html {
+    cursor: url('cursor.cur'), auto;
+  }  
+
 ul {
     list-style-type: none;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -7,6 +12,7 @@ ul {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    background-color: #fc4c4c;
 }
 
 li {
@@ -49,7 +55,7 @@ li a {
 }
 
 li a:hover {
-    background-color: #111;
+    background-color: #ff9292;
 }
 
 #logo {
@@ -132,5 +138,16 @@ body.dark-mode {
   
   #toggle-button:hover {
     background-color: #111;
+  }
+  
+  #user-display {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: url('cursor.cur');
   }
   

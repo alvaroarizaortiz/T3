@@ -1,5 +1,6 @@
 body {
   background-color: rgb(255, 255, 255);
+  font-family: Arial, sans-serif;
   color: #000;
   margin: 0;
   padding: 0;
@@ -20,7 +21,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: #fc4c4c;
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -67,7 +68,7 @@ li a {
 }
 
 li a:hover {
-  background-color: #111;
+  background-color: #ff9292;
 }
 
 #logo {
@@ -144,4 +145,15 @@ html {
 
 #toggle-button:hover {
   background-color: #111;
+}
+
+#user-display {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: url('cursor.cur');
 }

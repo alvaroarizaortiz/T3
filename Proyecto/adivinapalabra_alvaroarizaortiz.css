@@ -48,7 +48,7 @@ ul {
     overflow: hidden;
     display: flex;
     justify-content: space-between;
-    color: white;
+    background-color: #fc4c4c;
 }
 
 li {
@@ -91,7 +91,7 @@ li a {
 }
 
 li a:hover {
-    background-color: #111;
+    background-color: #ff9292;
 }
 
 #logo {
@@ -123,3 +123,14 @@ body.dark-mode {
     color: #ffffff;
   }
 
+  #user-display {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: url('cursor.cur');
+  }
+  

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="minijuegos.xsl"?>
+<minijuegos>
+  <titulo>La página de los pequeñitos minijuegos</titulo>
+  <autor>Álvaro Ariza Ortiz</autor>
+  <juego>
+    <nombre>Cara o cruz</nombre>
+    <descripcion>Una moneda que gira y te da el cara o cruz. Sin más, básico, fácil, compacto.</descripcion>
+  </juego>
+  <juego>
+    <nombre>Adivina el color</nombre>
+    <descripcion>El programa selecciona uno y tú vas pulsado botones hasta acertarlo.</descripcion>
+  </juego>
+  <juego>
+    <nombre>Adivina la palabra</nombre>
+    <descripcion>Es como un juego del ahorcado pero con temática Lenguaje de Marcas.</descripcion>
+  </juego>
+  <juego>
+    <nombre>Tres en raya</nombre>
+    <descripcion>O como Carlos lo llama, el TA-TE-TI.</descripcion>
+  </juego>
+  <juego>
+    <nombre>La hipnótica bola que bota</nombre>
+    <descripcion>Rendios ante el poder de la hipnótica bola que bota.</descripcion>
+  </juego>
+  <juego>
+    <nombre>Página de ajustes</nombre>
+    <descripcion>Para poner el nombre y un formulario HTML.</descripcion>
+  </juego>
+  <juego>
+    <nombre>Más información</nombre>
+    <descripcion>Modal con la información del sitio web.</descripcion>
+  </juego>
+</minijuegos>

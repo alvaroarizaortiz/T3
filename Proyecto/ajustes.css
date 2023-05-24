@@ -1,104 +1,150 @@
 body {
-    background-color: rgb(255, 255, 255);
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-  }
-  
-  body.dark-mode {
-    background-color: #000;
-    color: #fff;
-  }
-  
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-  }
-  
-  li {
-    margin-left: 10px;
-    position: relative;
-  }
-  
-  li::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: -5px;
-    transform: translateY(-50%);
-    height: 80%;
-    width: 1px;
-    background-color: #fff;
-  }
-  
-  li::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    right: -5px;
-    transform: translateY(-50%);
-    height: 80%;
-    width: 1px;
-    background-color: #fff;
-  }
-  
-  li:last-child::after {
-    display: none;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  
-  li a:hover {
-    background-color: #111;
-  }
-  
-  #logo {
-    margin-left: 0;
-    margin-right: auto;
-  }
-  
-  html {
-    cursor: url('cursor.cur'), auto;
-  }
-  
-  #toggle-button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #333;
-    color: white;
-    border: none;
-    padding: 8px 16px;
-    cursor: url('cursor.cur');
-  }
-  
-  #toggle-button:hover {
-    background-color: #111;
-  }
-  
-  #user-display {
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-    background-color: #333;
-    color: white;
-    border: none;
-    padding: 8px 16px;
-    cursor: url('cursor.cur');
-  }
+  background-color: rgb(255, 255, 255);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+body.dark-mode {
+  background-color: #000;
+  color: #fff;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #fc4c4c;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+li {
+  margin-left: 10px;
+  position: relative;
+}
+
+li::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -5px;
+  transform: translateY(-50%);
+  height: 80%;
+  width: 1px;
+  background-color: #fff;
+}
+
+li::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -5px;
+  transform: translateY(-50%);
+  height: 80%;
+  width: 1px;
+  background-color: #fff;
+}
+
+li:last-child::after {
+  display: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+li a:hover {
+  background-color: #ff9292;
+}
+
+#logo {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+html {
+  cursor: url('cursor.cur'), auto;
+}
+
+#toggle-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+#toggle-button:hover {
+  background-color: #111;
+}
+
+#user-display {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+/* Estilos  para el formulario */
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+label {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input[type="email"],
+textarea,
+input[type="text"] { /* Agregamos estilos para el campo de nombre */
+  width: 300px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+input[type="text"] { /* Estilo específico para el campo de nombre */
+  margin-top: 10px; /* Ajustamos la posición vertical del campo de nombre */
+}
+
+select {
+  width: 300px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  padding: 8px 16px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #111;
+}
