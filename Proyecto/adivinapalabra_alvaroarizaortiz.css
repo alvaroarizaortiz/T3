@@ -12,7 +12,7 @@ h1 {
 }
 
 p {
-    margin-bottom: 10px;  
+    margin-bottom: 10px;
 }
 
 #word-container {
@@ -121,9 +121,9 @@ html {
 body.dark-mode {
     background-color: #000;
     color: #ffffff;
-  }
+}
 
-  #user-display {
+#user-display {
     position: fixed;
     bottom: 20px;
     left: 20px;
@@ -132,5 +132,4 @@ body.dark-mode {
     border: none;
     padding: 8px 16px;
     cursor: url('cursor.cur');
-  }
-  
+}

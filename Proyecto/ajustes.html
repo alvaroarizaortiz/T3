@@ -26,14 +26,9 @@
 
     <button id="toggle-button">Cambiar modo día/noche</button>
     <div id="user-display"></div>
-    <script src="modonoche.js"></script>
+
 
     <h1>Ajustes</h1>
-
-
-    <!-- Elemento HTML para mostrar el nombre de usuario -->
-    <div id="user-display"></div>
-
     <!-- Formulario para ingresar el nombre de usuario -->
     <form onsubmit="saveUserName(); return false;">
         <input type="text" id="user-name-input" placeholder="Ingresa tu nombre">
@@ -59,8 +54,7 @@
         </form>
     </div>
 
-
-
+    <!-- Mensaje de más información en el menú-->
     <script>
         const enlaceMasInfo = document.getElementById("informacion");
         enlaceMasInfo.addEventListener("click", function () {
@@ -69,20 +63,18 @@
             - La URL entrada debe dirigir a la página de Inicio. He entregado todo en formato ZIP.
             - El menú se ve en todas las páginas menos en la página de XML ya que el profesor indicó que no era necesario.
             - El sitio tiene como mínimo tres páginas + información + ajustes.
-            - Lo que se configura con WebStorage (botón modo día/noche y usuario introducido en página ajustes) se guarda. El usuario se muestra en todas las páginas, el modo día/noche se guardará en cada página.
+            - Lo que se configura con WebStorage (botón modo día/noche y usuario introducido en página ajustes) se guarda. El usuario se muestra en todas las páginas, el modo día/noche se guarda para todas las páginas.
             - Utilizado un elemento XML y XSL para hacer una especie de "índice de juegos".
             - Utilizado JavaScript en varios de los sitios de la página web.
             - Utilizado elementos de HTML de ingreso de datos, en este caso en la página de ajustes he añadido un formulario para poner el email, un mensaje y un rol (profesor o estudiante).
             - Siempre visible en la esquina inferior izquierda el nombre de usuario que se ingresa en la página de ajustes. *IMPORTANTE* al ingresar el usuario pulsar el botón de guardar. No confundir con el botón enviar del formulario HTML.
             `;
-    
-           
             alert(informacion);
         });
     </script>
 
     <script src="ajustes.js"></script>
-    <script src="displayuser.js"></script>
+    <script src="modonoche.js"></script>
 </body>
 
 </html>

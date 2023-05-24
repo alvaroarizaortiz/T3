@@ -83,7 +83,7 @@ submitButton.addEventListener("click", function() {
       submitButton.disabled = true;
     } else {
       result.textContent = "Intentos restantes: " + (maxAttempts - attempts);
-      result.style.color = "white";
+      result.style.color = "red";
     }
 
     inputLetter.value = ""; // Limpiar el campo de entrada

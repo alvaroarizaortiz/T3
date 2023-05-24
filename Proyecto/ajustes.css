@@ -121,14 +121,17 @@ label {
 
 input[type="email"],
 textarea,
-input[type="text"] { /* Agregamos estilos para el campo de nombre */
+input[type="text"] {
+  /* Agregamos estilos para el campo de nombre */
   width: 300px;
   padding: 5px;
   margin-bottom: 10px;
 }
 
-input[type="text"] { /* Estilo específico para el campo de nombre */
-  margin-top: 10px; /* Ajustamos la posición vertical del campo de nombre */
+input[type="text"] {
+  /* Estilo específico para el campo de nombre */
+  margin-top: 10px;
+  /* Ajustamos la posición vertical del campo de nombre */
 }
 
 select {

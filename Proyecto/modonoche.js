@@ -19,11 +19,8 @@ toggleButton.addEventListener('click', function() {
 
 
 window.addEventListener('load', function() {
-    const modoPreferido = localStorage.getItem('modo');
-
-    // Verificar la preferencia almacenada
+    const modoPreferido = localStorage.getItem('modo'); 
     if (modoPreferido === 'noche') {
-        // Cambiar a modo noche
         document.body.classList.add('dark-mode');
     }
 });
