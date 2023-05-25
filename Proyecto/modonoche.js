@@ -1,7 +1,6 @@
 
 const toggleButton = document.getElementById('toggle-button');
 
-
 toggleButton.addEventListener('click', function() {
     // Verificar si se está en modo día o modo noche
     if (document.body.classList.contains('dark-mode')) {
